@@ -1,0 +1,194 @@
+/* ==UserStyle==
+@name           Tamo Dienynas Refresh
+@namespace      github.com/sobakintech/tamo-dienynas-visual-refresh
+@version        1.0.0
+@description    A refresh for the Tamo Dienynas website
+@author         SobakinTech
+@updateURL https://raw.githubusercontent.com/sobakintech/tamo-dienynas-visual-refresh/refs/heads/main/tamodienynas.user.less
+@license MIT
+==/UserStyle== */
+
+@-moz-document domain("dienynas.tamo.lt") {
+
+    /* Remove "SAUGUS SLAPTAŽODIS" banner */
+    li:nth-child(3) > .s_menu_title {
+        visibility: hidden;
+        height: 0;
+        margin: 0;
+        padding: 0;
+    }
+        
+    /* Remove second ad */
+    li:nth-child(2) > .s_menu_title {
+        visibility: hidden;
+        height: 0;
+        margin: 0;
+        padding: 0;
+    }
+        
+    /* ? */
+    .icon_news {
+        visibility: hidden;
+        height: 0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    /* Delete school name and school year */
+    .top_section_back > .col-md-10 {
+        visibility: hidden;
+        height: 0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Remove remaining session time bar */
+    #session_section > .col-md-14 {
+        visibility: hidden;
+        height: 0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Add roundess to the top bar */
+    #header_section > div > div {
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    
+    /* Add roundess to the body section */
+    #body_section {
+        border-radius: 20px;
+    }
+    
+    /* ? */
+    #header_section > div > div > div > div:nth-child(1) > a > div {
+        margin-bottom: 20px;
+    }
+    
+    /* Add roundess to section "buttons" on sidebar */
+    .s_menu_title {
+        border-radius: 20px;
+    }
+    
+    /* Add margin for the sidebar */
+    #s_menu {
+        background: none;
+        margin: 10px;
+        border-right: none;
+    }
+    
+    /* ? */
+    #c_main > div.row > div.col-md-8 {
+        margin-right: 20px;
+    }
+    
+    /* Add roundess to selected page button in sidebar */
+    #s_menu ol li.is-selected {
+        border-radius: 10px;
+    }
+    
+    /* Add roundess to hovered buttons in sidebar */
+    #s_menu ol li:hover {
+        border-radius: 10px;
+    }
+    
+    /* ? */
+    .c_tamo_tabs .tab_header li.active {
+        border-radius: 10px;
+    }
+    
+    /* Remove ugly bottom border under tabs in some pages */
+    .c_tamo_tabs .tab_header {
+        border-bottom: none;
+    }
+    
+    /* Add roundess for hovered tab buttons in pages */
+    #namu_darbai_tabs > ul > li {
+        border-radius: 10px;
+    }
+    
+    /* Make some stuff rounded */
+    input,
+    button,
+    select,
+    textarea,
+    .c_btn.utility {
+        border-radius: 10px;
+    }
+    
+    /* Remove useless analytics button in header */
+    #header_section > div > div > div > div:nth-child(2) > div:nth-child(1) {
+        visibility: hidden;
+        height: 0;
+        margin: 0;
+        padding: 0;
+    }
+        
+    /* Remove divider next to the analytics button in header */
+    #header_section > div > div > div > div:nth-child(2) > div:nth-child(2) > div > div {
+        border-left: none !important;
+    }
+    
+    /* Make footer section rounded */
+    #footer_section > div > div {
+        border-radius: 20px;
+        background: none;
+    }
+    #footer {
+        border-radius: 20px;
+        background: none;
+    }
+    
+    /* Make some stuff rounded??? */
+    a.c_btn, a.remove-item, a.remove-item-inline, .c_btn span, .remove-item span, .remove-item-inline span, .c_btn i, .remove-item i, .remove-item-inline i, .ui-button {
+        border-radius: 10px;
+    }
+    
+    /* ? */
+    #c_main > div.row > div.col-md-6.text-center {
+        visibility: hidden;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        width: 0;
+    }
+    
+    /* ? */
+    #c_main > div.row > div.col-md-8 {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    /* Remove "Pranešimai" button in sidebar */
+    #s_menu > ul:nth-child(2) > li:nth-child(12) > ol:nth-child(2) > li:nth-child(1) {
+        visibility: hidden;
+        height: 0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    }
+    
+    @-moz-document url-prefix("https://dienynas.tamo.lt/Prisijungimas") {
+    
+    body > a > div {
+        visibility: hidden;
+        height: 0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center;
+    }
+    
+    body > div.col_right {
+        width: 20%
+    }
+    
+    }
